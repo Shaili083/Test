@@ -9,16 +9,7 @@
 
    </head>
    <body>
-<div id="relative-popup" class="rel-pop">
-        <div id="small-pop-up">
-          <div id="pop-up-div">
-            <h2>Customer Materials</h2>
-            <p>overall calculations and headings</p>
-            <p><a href="javascript:void(0)" onmousedown="hidepop();">X</a></p>
-          
-        </div>
-      </div>
-     </div>
+
 
 
      <div id="popup-profile" class="profile-popup-pos">
@@ -119,7 +110,18 @@
                         <h2>Commercial & <br>Remainder Items</h2>
                         </div>
                         <div class="img">
-                        <button onmousedown="showpop();" onblur="hidepop();"><img src="C:\Users\moonraft\Desktop\Project\BEREO\assets\caret-circle-purple.png"></button>
+                        <button onclick="showpop()"><img  src="C:\Users\moonraft\Desktop\Project\BEREO\assets\caret-circle-purple.png"></button>
+                        <div id="relative-popup" class="rel-pop ">
+        
+                           <div id="pop-up-div" class="arrow_box">
+                           <h2>Customer Materials</h2>
+                          <p>overall calculations and headings</p>
+                          <p><a href="javascript:void(0)" onclick="showpop();">X</a></p>
+          
+                      </div>
+      
+                      </div>
+
                         </div>
                         </div>
                         <div class="star-block">
@@ -150,7 +152,7 @@
                         <p>Is 10% a good amount for remainder items</p>
                         </div>
                         <div class="options">
-                        <pre><h3><input type="radio" name="option" value="yes" checked>YES  <input type="radio" name="option" value="no">NO</h3></pre>
+                        <span onclick="callyes();"><input type="radio" name="option" value="yes" id="Y" checked>YES </span> <input type="radio" name="option" value="no" id="N"><span onclick="callNo();">NO</span>
                         </div>
                         </div>
             
@@ -296,12 +298,12 @@
             </div>
 
             <div class ="text-under-more">
-            <p id="extend" class="ptag">Lorem ipsum dolor sit amet,consectetur edipising elit.mauris tincindent velit sit amet tortor ullamcorper  venenatis.Pallentesque congue dapibus elem.
+            <p id="extend">Lorem ipsum dolor sit amet,consectetur edipising elit.mauris tincindent velit sit amet tortor ullamcorper  venenatis.Pallentesque congue dapibus elem.
             </p>
             </div>
             <div class="more-link clearfix">
             <div class="link-part">
-            <p id="more-less" onclick="toggledetail();">MORE</p>
+            <p id="moreid" onclick="toggledetail();">MORE</p>
             </div>
             <div class="right-arrow">
             <img  src="C:\Users\moonraft\Desktop\project\BEREO\assets\chevron.png">
@@ -328,19 +330,13 @@
             </div>
             </div>
             <div class ="text-under-more">
-            <p>Lorem ipsum dolor sit amet,consectetur edipising elit.mauris tincindent velit sit amet tortor ullamcorper  venenatis.Pallentesque congue dapibus elem <span id="dots-two">...</span>
+            <p id="extendtwo">Lorem ipsum dolor sit amet,consectetur edipising elit.mauris tincindent velit sit amet tortor ullamcorper  venenatis.Pallentesque congue dapibus elem.
             </p>
-              <p id="hiddenpara-two">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
+              
             </div>
               <div class="more-link clearfix">
               <div class="link-part">
-               <p id="more-less-two" onmousedown="toggledetailtwo();">MORE</p>
+               <p id="moreidtwo" onclick="toggledetailtwo();">MORE</p>
             </div>
                <div class="right-arrow">
                <img  src="C:\Users\moonraft\Desktop\Project\BEREO\assets\chevron.png">
@@ -373,20 +369,14 @@
                </div>
                 </div>
                 <div class ="text-under-more">
-                  <p>Lorem ipsum dolor sit amet,consectetur edipising elit.mauris tincindent velit sit amet tortor ullamcorper venenatis.Pallentesque congue dapibus elem.<span id="dots-three">...</span>
+                  <p id="extendthree">Lorem ipsum dolor sit amet,consectetur edipising elit.mauris tincindent velit sit amet tortor ullamcorper venenatis.Pallentesque congue dapibus elem.
                  </p>
-                 <p id="hiddenpara-three">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                 consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-               </p>
+                 
                </div>
 
               <div class="more-link clearfix">
               <div class="link-part">
-               <p id="more-less-three" onmousedown="toggledetailthree();">MORE</p>
+               <p id="moreidthree" onclick="toggledetailthree();">MORE</p>
              </div>
 
                <div class="right-arrow">
