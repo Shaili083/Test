@@ -117,3 +117,47 @@ function callNo() {
 
 }
 
+let translate_by="";
+var x=0;
+
+function sliderightfunction()
+{
+ var slide=document.getElementsByClassName('innerdiv');
+ if(x<=slide.length)
+ {
+  translate_by = "-100"*(x+1);
+  document.getElementById('div-three').style.transform="translate(" + translate_by + "%)";
+  x++;
+ }
+ else
+ {
+  document.getElementById('div-three').style.transform="translate(0%)";
+  x=0;
+ }
+}
+
+var y=0;
+function slideleftfunction()
+{
+  if(x==0 && y==0)
+  {
+    alert('working')
+    document.getElementById('div-three').style.transform="translate(-200%);"
+    y++;
+  }
+if(y>0)
+{
+  document.getElementById('div-three').style.transform="translate(+100%);"
+
+}
+if(y==0)
+{
+  document.getElementById('div-three').style.transform="translate(-200%);"
+}
+else
+{
+  document.getElementById('div-three').style.transform="translate(+100%);"
+}
+}
+
+

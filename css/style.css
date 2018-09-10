@@ -276,7 +276,7 @@ border-bottom: 0;
 	width: 75%;
 	display: none;
 	opacity: 1;
-	display: inline-block;
+
 }
 
 
@@ -471,26 +471,50 @@ margin-bottom: 1em;
 	background-color: white;
 	box-sizing: border-box;
 }
+
+.flexbox{
+	position:relative;
+	height: 260px;
+}
+.innerflexbox{
+	position:absolute;
+	top:0;
+	left:0;
+	height:100%;
+	width: 100%;
+	overflow: hidden;
+}
+.innerdiv{
+	display: flex;
+	transition-duration: 1s;
+
+
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 3s;
+  }
+
 .blocks{
 	box-sizing: border-box;
+	float:left;
+	display: flex;
+	flex-shrink: 0;
+	width:100%;
 	}
 	.blocks article:nth-child article(3){
 		margin-right: 0;
+}
+
+.secondslide{
+	box-sizing: border-box;
+	float:left;
+	display: flex;
+	flex-shrink: 0;
+	width:100%;
 	}
-
-#hiddenpara
-{
-	display: none;
-}
-
-#hiddenpara-two
-{
-	display: none;
-}
-#hiddenpara-three{
-	display: none;
-}
-
 
 
 .arr{
@@ -602,80 +626,6 @@ color:green !important;
 white-space: normal !important; 
 }
 
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-}
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
- 
- .numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.doting {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active-slider, .dot:hover {
-  background-color: #717171;
-}
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-.mySlides {display: none}
-
-
-
 .arrow_box {
 	position: relative;
 	background: #88b7d5;
@@ -706,6 +656,10 @@ white-space: normal !important;
 	margin-top: -16px;
 }
 
+.translate{
+
+	transform: translate(100px 0);
+}
 
 
 
